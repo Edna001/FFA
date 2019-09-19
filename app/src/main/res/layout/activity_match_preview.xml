@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MatchPreviewActivity">
+
+    <fragment android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/match_preview_fragment"
+              class="com.hellocompany.finalfootballapplication.ui.fragment.MatchPreviewFragment"
+              tools:layout="@layout/match_preview_fragment"
+    />
+
+</LinearLayout>

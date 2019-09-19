@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="viewModel"
+                  type="com.hellocompany.finalfootballapplication.viewmodel.MatchPreviewViewModel"/>
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="88dp">
+
+      <com.hellocompany.finalfootballapplication.ui.view.TeamView
+            android:id="@+id/teamOneId"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/matchScore"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                tools:text="Goals"
+                android:text="@={viewModel.matchScore}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/matchTime"
+                android:textColor="#B1B1B1"
+                android:textSize="12sp"
+                tools:text="Game Time"
+                android:text="@={viewModel.matchTime}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+          </LinearLayout>
+
+      <com.hellocompany.finalfootballapplication.ui.view.TeamView
+              android:id="@+id/teamTwoId"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</layout>

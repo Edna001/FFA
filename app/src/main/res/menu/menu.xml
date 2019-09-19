@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Matches"
+          android:icon="@drawable/ic_match_menu"/>
+    <item android:title="Top Players"
+          android:icon="@drawable/ic_profile_menu"/>
+    <item android:title="Videos"
+          android:icon="@drawable/ic_videos_menu"/>
+    <item android:title="Favorites"
+          android:icon="@drawable/ic_notification_menu"/>
+    <item android:title="Settings"
+          android:icon="@drawable/ic_settings_menu"/>
+</menu>
